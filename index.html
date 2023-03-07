@@ -1,0 +1,119 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet"> 
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      margin:0;
+      padding:0;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 800;
+    }
+    main{
+      background-color:#13171e;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+    p{
+      margin:0;
+    }
+    .card-block{
+      max-width:538px;
+      width:auto;
+      background-color: #1d232b;
+      border-radius: 12px;
+      position: relative;
+      padding:30px;
+      margin: 30px;
+    }
+    .button-container{
+      position: absolute;
+      bottom: 0;
+      left:0;
+      right:0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .btn{
+      width:62px;
+      height:62px;
+      border-radius:50%;
+      background-color: hsl(150, 100%, 66%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      margin-bottom: -31px;
+      box-shadow: 0px 0px 0px 0px hsl(150deg 100% 66%);
+      transition: all .4s ease-in;
+      /* bottom:0; */
+    }
+    .btn:hover{
+      box-shadow: 0px 0px 22px 0px hsl(150deg 100% 66%);
+
+    }
+    .number{
+       color:#329967;
+       margin-bottom: 25px;
+    }
+     
+    .card-block-content{
+      text-align: center;
+
+    }
+
+    .content{
+      color:#cfe4e9;
+      font-size: 28px;
+      max-width: 435px;
+      width:100%;
+      margin-inline: auto;
+      margin-bottom: 30px;
+      /* margin-bottom: 25px; */
+
+    }
+
+    .divider{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 35px;
+    }
+
+    .img-fluid{
+      max-width:100%;
+      width:auto;
+    }
+
+    @media (max-width:600px){
+      .content{
+        font-size:20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="main-container">
+      <div class="card-block">
+        <div class="card-block-content">
+           
+        </div>
+        <div class="divider"><img src="./images/pattern-divider-desktop.svg" class="img-fluid" alt="pattern devider"></div>
+        <div class="button-container">
+          <div class="btn">
+             <img src="./images/icon-dice.svg" alt="dice">
+          </div>
+        </div>
+      </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
